@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Thriving World — A Global Movement for Human Flourishing</title>
+  <meta name="description" content="A Thriving World is a global nonprofit movement dedicated to one bold idea: that every human being deserves the opportunity not just to survive—but to truly thrive." />
+  <meta property="og:title" content="A Thriving World — A Global Movement for Human Flourishing" />
+  <meta property="og:description" content="We exist at the intersection of humanity, technology, and possibility — building systems, media, and communities that ensure a thriving life is the standard." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="thriving-world.css" />
+  <link rel="icon" href="thriving-world-logo.svg" type="image/svg+xml" />
+</head>
+<body>
+
+<!-- ─── Navigation ─── -->
+<nav class="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="thriving-world-logo.svg" class="logo-icon" width="32" height="32" alt="A Thriving World" />
+        A Thriving World
+      </a>
+      <ul class="nav-links">
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#ecosystem">What We Build</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#podcast">Podcast</a></li>
+        <li><a href="#vision">Vision</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#join" class="btn btn-primary">Join the Movement</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#mission">Mission</a>
+    <a href="#ecosystem">What We Build</a>
+    <a href="#events">Events</a>
+    <a href="#podcast">Podcast</a>
+    <a href="#vision">Vision</a>
+    <a href="#join" class="btn btn-primary">Join the Movement</a>
+  </div>
+</nav>
+
+<!-- ─── Hero ─── -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="pulse-dot"></span>
+          A Global Nonprofit Movement
+        </div>
+        <h1>Every Human Being<br>Deserves to <span class="hero-highlight">Thrive.</span></h1>
+        <p class="hero-desc">
+          We exist at the intersection of humanity, technology, and possibility — building the systems, media, and communities that ensure a thriving life is not a privilege. It's the standard.
+        </p>
+        <div class="hero-actions">
+          <a href="#join" class="btn btn-primary btn-lg">Join the Movement →</a>
+          <a href="#mission" class="btn btn-outline btn-lg">Our Vision</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="stat-number">7.8B</div>
+            <div class="stat-label">People Who<br>Deserve to Thrive</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="hero-stat">
+            <div class="stat-number">5</div>
+            <div class="stat-label">Continents,<br>One Vision</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="hero-stat">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Human Potential<br>Unleashed</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Globe Visual -->
+      <div class="hero-visual" aria-hidden="true">
+        <svg class="hero-globe-svg" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Glow -->
+          <circle cx="240" cy="240" r="200" fill="url(#globeGlow)" opacity="0.5"/>
+          <!-- Main globe circle -->
+          <circle cx="240" cy="240" r="190" stroke="#1A4D3A" stroke-width="1.5" fill="white" fill-opacity="0.6"/>
+          <!-- Latitude lines -->
+          <ellipse cx="240" cy="240" rx="190" ry="60" stroke="#1A4D3A" stroke-width="1" stroke-dasharray="4 4" opacity="0.35"/>
+          <ellipse cx="240" cy="240" rx="190" ry="120" stroke="#1A4D3A" stroke-width="1" stroke-dasharray="4 4" opacity="0.3"/>
+          <line x1="50" y1="240" x2="430" y2="240" stroke="#1A4D3A" stroke-width="1.2" opacity="0.4"/>
+          <ellipse cx="240" cy="195" rx="176" ry="40" stroke="#1A4D3A" stroke-width="1" stroke-dasharray="3 5" opacity="0.25"/>
+          <ellipse cx="240" cy="285" rx="176" ry="40" stroke="#1A4D3A" stroke-width="1" stroke-dasharray="3 5" opacity="0.25"/>
+          <!-- Meridian lines -->
+          <ellipse cx="240" cy="240" rx="70" ry="190" stroke="#1A4D3A" stroke-width="1" stroke-dasharray="4 4" opacity="0.3"/>
+          <ellipse cx="240" cy="240" rx="135" ry="190" stroke="#1A4D3A" stroke-width="1" stroke-dasharray="4 4" opacity="0.25"/>
+          <line x1="240" y1="50" x2="240" y2="430" stroke="#1A4D3A" stroke-width="1.2" opacity="0.4"/>
+          <!-- Continent shapes (abstract) -->
+          <!-- North America -->
+          <path d="M140 155 C145 145 160 140 175 148 C185 154 190 165 185 178 C178 192 165 200 152 195 C138 188 132 170 140 155Z" fill="#1A4D3A" opacity="0.18"/>
+          <!-- Europe/Africa -->
+          <path d="M228 148 C238 142 252 145 258 155 C264 165 260 178 250 182 C240 186 228 180 224 170 C220 160 222 152 228 148Z" fill="#1A4D3A" opacity="0.15"/>
+          <path d="M232 192 C242 188 254 192 258 204 C263 218 258 235 246 240 C234 244 222 238 218 225 C214 212 220 198 232 192Z" fill="#1A4D3A" opacity="0.18"/>
+          <!-- Asia -->
+          <path d="M280 150 C295 142 318 145 328 158 C338 170 335 188 322 196 C308 204 290 200 282 188 C274 176 268 158 280 150Z" fill="#1A4D3A" opacity="0.15"/>
+          <!-- Australia -->
+          <path d="M318 278 C328 272 342 275 347 286 C352 297 346 310 335 314 C324 318 312 312 308 300 C304 288 308 282 318 278Z" fill="#1A4D3A" opacity="0.13"/>
+          <!-- South America -->
+          <path d="M168 218 C178 212 192 215 196 228 C200 240 194 258 182 263 C170 268 158 260 155 248 C152 236 158 224 168 218Z" fill="#1A4D3A" opacity="0.15"/>
+          <!-- Connection nodes (people around the world) -->
+          <circle cx="160" cy="172" r="5" fill="#2D7A5F" opacity="0.7"/>
+          <circle cx="243" cy="162" r="4" fill="#2D7A5F" opacity="0.7"/>
+          <circle cx="305" cy="170" r="5" fill="#2D7A5F" opacity="0.7"/>
+          <circle cx="335" cy="293" r="4" fill="#2D7A5F" opacity="0.6"/>
+          <circle cx="180" cy="240" r="5" fill="#2D7A5F" opacity="0.7"/>
+          <circle cx="243" cy="218" r="4" fill="#4DAA8A" opacity="0.8"/>
+          <circle cx="138" cy="305" r="3.5" fill="#2D7A5F" opacity="0.6"/>
+          <circle cx="370" cy="220" r="4" fill="#2D7A5F" opacity="0.6"/>
+          <!-- Connection lines between nodes -->
+          <line x1="160" y1="172" x2="243" y2="162" stroke="#2D7A5F" stroke-width="1" opacity="0.3"/>
+          <line x1="243" y1="162" x2="305" y2="170" stroke="#2D7A5F" stroke-width="1" opacity="0.3"/>
+          <line x1="160" y1="172" x2="180" y2="240" stroke="#2D7A5F" stroke-width="1" opacity="0.25"/>
+          <line x1="305" y1="170" x2="335" y2="293" stroke="#2D7A5F" stroke-width="1" opacity="0.25"/>
+          <line x1="243" y1="218" x2="180" y2="240" stroke="#4DAA8A" stroke-width="1.2" opacity="0.4"/>
+          <line x1="243" y1="218" x2="305" y2="170" stroke="#4DAA8A" stroke-width="1.2" opacity="0.4"/>
+          <line x1="243" y1="218" x2="243" y2="162" stroke="#4DAA8A" stroke-width="1.2" opacity="0.35"/>
+          <line x1="305" y1="170" x2="370" y2="220" stroke="#2D7A5F" stroke-width="1" opacity="0.25"/>
+          <!-- Globe outer ring -->
+          <circle cx="240" cy="240" r="190" stroke="#1A4D3A" stroke-width="2" fill="none"/>
+          <!-- Defs -->
+          <defs>
+            <radialGradient id="globeGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#4DAA8A" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#1A4D3A" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+        </svg>
+
+        <!-- Floating cards around the globe -->
+        <div class="hero-float-card hero-float-card--tl">
+          <div class="hfc-icon">🎙</div>
+          <div class="hfc-text">
+            <div class="hfc-label">Podcast</div>
+            <div class="hfc-sub">Now Live</div>
+          </div>
+        </div>
+        <div class="hero-float-card hero-float-card--tr">
+          <div class="hfc-icon">🌍</div>
+          <div class="hfc-text">
+            <div class="hfc-label">4 Continents</div>
+            <div class="hfc-sub">Events 2025</div>
+          </div>
+        </div>
+        <div class="hero-float-card hero-float-card--br">
+          <div class="hfc-icon">✨</div>
+          <div class="hfc-text">
+            <div class="hfc-label">AI + Soul Summit</div>
+            <div class="hfc-sub">Coming Soon</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Mission / Beliefs ─── -->
+<section class="beliefs" id="mission">
+  <div class="container">
+    <div class="section-eyebrow">What We Believe</div>
+    <h2 class="section-title">The Foundation of Our Work</h2>
+    <div class="beliefs-grid">
+      <div class="belief-card">
+        <div class="belief-number">01</div>
+        <h3>Thriving Is a Right,<br>Not a Privilege</h3>
+        <p>Access to education, opportunity, wellbeing, and creative expression should not depend on where you were born, who you know, or what you have. Every human being arrives deserving a full life.</p>
+      </div>
+      <div class="belief-card">
+        <div class="belief-number">02</div>
+        <h3>Technology Should<br>Expand Human Potential</h3>
+        <p>AI and emerging technology must be tools for human flourishing — amplifying creativity, opportunity, and connection rather than replacing or diminishing the irreplaceable human spirit.</p>
+      </div>
+      <div class="belief-card">
+        <div class="belief-number">03</div>
+        <h3>A Better World Is<br>a Design Challenge</h3>
+        <p>We don't wait for the world to change. We design systems, build movements, and create media that make thriving the default human experience — across every culture, every geography, every generation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── What We're Building ─── -->
+<section class="ecosystem" id="ecosystem">
+  <div class="container">
+    <div class="section-eyebrow">The Ecosystem</div>
+    <h2 class="section-title">More Than a Nonprofit.<br>An Ecosystem.</h2>
+    <p class="section-desc">A Thriving World operates across five interconnected pillars — each designed to create real, lasting impact at global scale.</p>
+    <div class="ecosystem-grid">
+
+      <!-- Tall card: Media & Podcast -->
+      <div class="eco-card eco-card--tall">
+        <div class="eco-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="9" r="4.5" stroke="currentColor" stroke-width="1.7"/>
+            <path d="M5 20c0-3.866 3.134-7 7-7s7 3.134 7 7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            <circle cx="19" cy="18" r="3.5" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M17.5 19.5l1.5-1.5 1.5 1.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="eco-tag">Media &amp; Content</div>
+        <h3>Media &amp; Podcast</h3>
+        <p>A Thriving World Podcast — conversations with leaders, creators, scientists, and visionaries shaping the future of humanity. Warm. Deep. Transformative.</p>
+        <p style="margin-top:16px;">Our content blends depth and curiosity, designed to make people feel seen, inspired, and ready to build lives they love.</p>
+        <a href="#podcast" class="eco-link">Listen to the Podcast →</a>
+      </div>
+
+      <!-- Venture Studio -->
+      <div class="eco-card">
+        <div class="eco-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3l2.5 5.5H20l-4.5 3.5 1.5 5.5L12 14l-5 3.5 1.5-5.5L4 8.5h5.5L12 3z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="eco-tag">Innovation</div>
+        <h3>Venture Studio + AI Lab</h3>
+        <p>We incubate mission-driven startups and AI solutions focused on education, mental health, economic opportunity, and ethical human-centered technology.</p>
+      </div>
+
+      <!-- Nonprofit Infrastructure -->
+      <div class="eco-card">
+        <div class="eco-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.7"/>
+            <circle cx="4.5" cy="6" r="2" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="19.5" cy="6" r="2" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="4.5" cy="18" r="2" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="19.5" cy="18" r="2" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M6.5 7L10 10M14 10l3.5-3M14 14l3.5 3M10 14l-3.5 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="eco-tag">Infrastructure</div>
+        <h3>Nonprofit Infrastructure</h3>
+        <p>Free resources, AI-powered tools, and strategic partnerships for nonprofits, educators, and changemakers. Help the people doing good… do even more good.</p>
+      </div>
+
+      <!-- Economic Innovation — wide -->
+      <div class="eco-card eco-card--wide">
+        <div class="eco-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 17l4-5 4 3 4-7 4 3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="12" cy="6" r="3" stroke="currentColor" stroke-width="1.7"/>
+            <path d="M11 6h2M12 5v2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="eco-tag">Economic Justice</div>
+        <h3>Economic Innovation &amp; UBI Advocacy</h3>
+        <p>Exploring and advocating for new economic models — Universal Basic Income research, pilot programs, and systems that reduce scarcity and expand opportunity for every human being on the planet.</p>
+        <a href="#vision" class="eco-link">Our Economic Vision →</a>
+      </div>
+
+      <!-- Global Events -->
+      <div class="eco-card">
+        <div class="eco-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/>
+            <ellipse cx="12" cy="12" rx="4.5" ry="9" stroke="currentColor" stroke-width="1.4"/>
+            <path d="M3.5 9Q12 7.5 20.5 9" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+            <path d="M3.5 15Q12 16.5 20.5 15" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
+        <div class="eco-tag">Global Gatherings</div>
+        <h3>Global Events &amp; Summits</h3>
+        <p>From intimate salons to global summits — blending AI, business, social impact, creativity, music, and culture. Designed to spark real-world action.</p>
+        <a href="#events" class="eco-link">See Events →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── Global Events ─── -->
+<section class="events" id="events">
+  <div class="container">
+    <div class="section-eyebrow light">Upcoming Events</div>
+    <h2 class="section-title light">Gathering the World</h2>
+    <p class="section-desc light">High-energy, high-impact experiences at the intersection of humanity, technology, art, and possibility.</p>
+    <div class="events-grid">
+
+      <div class="event-card event-card--featured">
+        <div class="event-label">Flagship Event</div>
+        <h3>Thriving World Summit</h3>
+        <p>The premier global gathering at the intersection of human potential, technology, and social impact. Where world leaders, artists, founders, and visionaries come together to design a better future.</p>
+        <div class="event-meta">
+          <span class="event-cities">LA · NYC · London · Dubai</span>
+          <span class="event-year">2025</span>
+        </div>
+        <a href="#join" class="btn btn-white">Learn More</a>
+      </div>
+
+      <div class="event-card">
+        <div class="event-label">Conference Series</div>
+        <h3>Future of Humanity Conference</h3>
+        <p>Deep-dive sessions on the most critical questions facing civilization in the age of AI — with the world's leading thinkers and builders.</p>
+        <div class="event-meta">
+          <span class="event-cities">Global</span>
+          <span class="event-year">2025</span>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-label">Special Event</div>
+        <h3>AI + Soul</h3>
+        <p>Where artificial intelligence meets human wisdom, creativity, and spiritual intelligence. The conversation the world needs most right now.</p>
+        <div class="event-meta">
+          <span class="event-cities">TBA</span>
+          <span class="event-year">2025</span>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-label">Annual Summit</div>
+        <h3>Women Who Shape the World</h3>
+        <p>Celebrating and amplifying the women — leaders, artists, scientists, and founders — who are defining the future of our shared humanity.</p>
+        <div class="event-meta">
+          <span class="event-cities">Global</span>
+          <span class="event-year">2025</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── Podcast ─── -->
+<section class="podcast" id="podcast">
+  <div class="container">
+    <div class="podcast-inner">
+      <div class="podcast-left">
+        <div class="section-eyebrow">Media</div>
+        <h2>A Thriving World<br>Podcast</h2>
+        <p>Conversations with the leaders, creators, scientists, and visionaries who are building a better world. Warm, deep, and designed to make you feel seen — and ready to act.</p>
+        <p>Featuring world leaders, artists, founders, scientists, philosophers, and everyday people doing extraordinary things.</p>
+        <div class="podcast-actions">
+          <a href="#join" class="btn btn-primary">Listen Now</a>
+          <a href="#join" class="btn btn-outline">Subscribe</a>
+        </div>
+      </div>
+      <div class="podcast-right">
+        <div class="podcast-card">
+          <div class="podcast-wave" aria-hidden="true">
+            <div class="wave-bar" style="height:42%"></div>
+            <div class="wave-bar" style="height:68%"></div>
+            <div class="wave-bar" style="height:88%"></div>
+            <div class="wave-bar" style="height:55%"></div>
+            <div class="wave-bar" style="height:100%"></div>
+            <div class="wave-bar" style="height:74%"></div>
+            <div class="wave-bar" style="height:52%"></div>
+            <div class="wave-bar" style="height:82%"></div>
+            <div class="wave-bar" style="height:44%"></div>
+            <div class="wave-bar" style="height:68%"></div>
+            <div class="wave-bar" style="height:78%"></div>
+            <div class="wave-bar" style="height:48%"></div>
+            <div class="wave-bar" style="height:70%"></div>
+            <div class="wave-bar" style="height:38%"></div>
+            <div class="wave-bar" style="height:60%"></div>
+            <div class="wave-bar" style="height:88%"></div>
+            <div class="wave-bar" style="height:55%"></div>
+            <div class="wave-bar" style="height:72%"></div>
+          </div>
+          <div class="podcast-now-playing">
+            <div class="play-btn" role="button" aria-label="Play episode">▶</div>
+            <div class="playing-info">
+              <div class="playing-episode">Latest Episode</div>
+              <div class="playing-title">"What Does It Mean to Truly Thrive?"</div>
+              <div class="playing-guest">Opening Conversation · Season 1</div>
+            </div>
+          </div>
+          <div class="podcast-recent">
+            <div class="recent-label">Recent Episodes</div>
+            <div class="recent-episode">
+              <span class="ep-num">02</span>
+              <span class="ep-title">The AI + Human Future</span>
+            </div>
+            <div class="recent-episode">
+              <span class="ep-num">03</span>
+              <span class="ep-title">Redesigning Education for a New Era</span>
+            </div>
+            <div class="recent-episode">
+              <span class="ep-num">04</span>
+              <span class="ep-title">Women Leading the World Forward</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Credibility Bar ─── -->
+<div class="credibility">
+  <div class="container">
+    <div class="credibility-inner">
+      <div class="credibility-label">The Scale of What's Possible</div>
+      <div class="credibility-stats">
+        <div class="cred-stat">
+          <div class="cred-num">7.8B</div>
+          <div class="cred-label">People in Our World</div>
+        </div>
+        <div class="cred-divider"></div>
+        <div class="cred-stat">
+          <div class="cred-num">195</div>
+          <div class="cred-label">Countries to Reach</div>
+        </div>
+        <div class="cred-divider"></div>
+        <div class="cred-stat">
+          <div class="cred-num">2.4B</div>
+          <div class="cred-label">Children Who Need Better Systems</div>
+        </div>
+        <div class="cred-divider"></div>
+        <div class="cred-stat">
+          <div class="cred-num">1</div>
+          <div class="cred-label">Movement to Change Everything</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── Vision ─── -->
+<section class="vision-section" id="vision">
+  <div class="container">
+    <div class="vision-quote">
+      <span class="quote-mark" aria-hidden="true">"</span>
+      <blockquote>
+        A world where every child has access to education, resources, and belief in their potential. Where every adult has the opportunity to live a meaningful, creative, and financially supported life. Where technology amplifies humanity — not diminishes it.
+      </blockquote>
+      <cite>— The Vision of A Thriving World</cite>
+    </div>
+    <div class="vision-pillars">
+      <div class="v-pillar">
+        <div class="v-pillar-label">Education</div>
+        <p>Every child deserves world-class learning — regardless of geography, income, or circumstance. We build toward a world where no child is left without the tools to grow.</p>
+      </div>
+      <div class="v-pillar">
+        <div class="v-pillar-label">Wellbeing</div>
+        <p>Mental, emotional, and physical health should be supported by systems — not left to individual will power alone. Thriving starts from within, and society must make that possible.</p>
+      </div>
+      <div class="v-pillar">
+        <div class="v-pillar-label">Opportunity</div>
+        <p>Economic security and creative freedom must be available to all — not just those born into the right zip code. We advocate for models that make abundance the new baseline.</p>
+      </div>
+      <div class="v-pillar">
+        <div class="v-pillar-label">Technology</div>
+        <p>AI and emerging technology must be developed with human flourishing — not just efficiency — as the north star. We help shape that future through research, advocacy, and partnership.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Join the Movement ─── -->
+<section class="join-section" id="join">
+  <div class="container">
+    <div class="join-inner">
+      <div class="section-eyebrow light">Join the Movement</div>
+      <h2>You Belong Here.</h2>
+      <p class="join-desc">Whether you're a creator, founder, nonprofit leader, artist, scientist, or simply someone who believes in a better future — this is your home. This is not just an organization. This is a movement.</p>
+      <form class="join-form" id="joinForm">
+        <div class="join-form-row">
+          <input type="text" placeholder="Your Name" class="join-input" autocomplete="given-name" />
+          <input type="email" placeholder="Your Email" class="join-input" required autocomplete="email" />
+          <button type="submit" class="btn btn-amber btn-lg">Join the Movement →</button>
+        </div>
+        <p class="join-note">Free to join. No spam. Just a movement worth being part of.</p>
+      </form>
+      <div class="join-roles">
+        <span class="role-pill">Creators &amp; Artists</span>
+        <span class="role-pill">Founders &amp; Builders</span>
+        <span class="role-pill">Nonprofit Leaders</span>
+        <span class="role-pill">Scientists &amp; Researchers</span>
+        <span class="role-pill">Educators</span>
+        <span class="role-pill">Changemakers</span>
+        <span class="role-pill">Visionaries</span>
+        <span class="role-pill">You</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Footer ─── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo">
+          <img src="thriving-world-logo.svg" class="footer-logo-icon" width="28" height="28" alt="A Thriving World" />
+          A Thriving World
+        </a>
+        <p>A global nonprofit movement dedicated to ensuring every human being has the opportunity to truly thrive — emotionally, financially, creatively, and socially.</p>
+        <div class="footer-badge">
+          <span class="badge-dot"></span>
+          Global Nonprofit Movement · 501(c)(3)
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Movement</h4>
+        <a href="#mission">Our Mission</a>
+        <a href="#mission">Core Beliefs</a>
+        <a href="#vision">Our Vision</a>
+        <a href="#join">Join Us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Work</h4>
+        <a href="#ecosystem">What We Build</a>
+        <a href="#events">Events &amp; Summits</a>
+        <a href="#podcast">Podcast</a>
+        <a href="#ecosystem">AI Lab</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="#join">Partner With Us</a>
+        <a href="#join">Fund the Movement</a>
+        <a href="#join">Press &amp; Media</a>
+        <a href="mailto:hello@athrivingworld.org">Contact Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2025 A Thriving World. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Impact Report</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="thriving-world.js"></script>
+</body>
+</html>
